@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, BrowserRouter as Router} from 'react-router-dom';
+import {  Route, Switch} from 'react-router-dom';
 
 import Home from './Home';
 import Form from './Form';
@@ -7,10 +7,10 @@ import Form from './Form';
 const Body = () => {
     return (
         <div>
-            <Router>
+            <Switch> 
                 <Route exact path="/" component={Home}></Route>
                 <Route  path="/form" component={Form}></Route>
-            </Router>
+            </Switch>
         </div>
     )
 }

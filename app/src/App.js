@@ -1,18 +1,17 @@
 import React from 'react';
-import Navigation from './components/Navigation';
+import Navigation from './components/common/Navigation';
 import './App.css';
 import Body from './components/Body';
 
 function App() {
   return (
     <div className="App">
+
       <header>
         <Navigation>
         </Navigation>
       </header>
-      <body>
-        <Body></Body>
-      </body>
+      <Body></Body>
     </div>
   );
 }
