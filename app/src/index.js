@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import {BrowserRouter as Router} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+import configureStore from './configureStore';
+
+const store = configureStore();
 
 ReactDOM.render(
 <Router>
